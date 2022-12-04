@@ -1,3 +1,3 @@
-console.log('Stirng em aspas simples')
-console.log("stirng em aspas duplas")
-console.log(`string em template literals`)
+console.log(1)
+console.log(1.5)
+console.log(1 + 1.5)
