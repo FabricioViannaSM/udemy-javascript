@@ -1,12 +1,12 @@
-let idade = prompt("Quantos anos você tem?")
-let nome = prompt("Qual é o seu nome?")
-let passaporte = true
+let nome = prompt("Digite o seu nome")
+let idade = prompt("Digite a sua idade")
+
 if (idade >= 18){
-    alert("Seja bem vindo!")
-    if (nome= "Fabrício" && idade >=18 || passaporte == true){
-        alert("Acesso Liberado!")
-}
-}
-if (idade < 18){
-    alert("Site apenas para maiores de 18 anos")
+    console.log(`Seja bem vindo ${nome}!`)
+}if (idade == 24){
+    console.log(`haaaan lá ele!`)
+}if (nome == "Fabrício" && idade == 18){
+    console.log("Bem vindo ADM!")
+}if (idade <18){
+    console.log(`Me desculpe ${nome}, este site é apenas para maiore de idade.`)
 }
