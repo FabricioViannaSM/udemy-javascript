@@ -10,3 +10,7 @@ function Dog(breed, paws, color){
 let husky = new Dog("husky", 4, "gray")
 console.log(husky)
 husky.bark()
+
+let goldenRetriever = new Dog("Golden Retriever", 4, "Golden")
+console.log(goldenRetriever)
+goldenRetriever.bark()
