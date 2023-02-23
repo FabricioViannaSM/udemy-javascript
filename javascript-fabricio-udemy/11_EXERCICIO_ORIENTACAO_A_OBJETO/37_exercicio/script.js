@@ -1,5 +1,5 @@
 //Em manutenção
-/*class Carrinho {
+class Carrinho {
     constructor(itens, itensqt, valor, ){
         this.itens = [itens]
         this.itensqt = [itensqt]
@@ -15,8 +15,12 @@
     }
 
     removeItem(item){
-        let i = (this.itens).indesxOf(item)
-
+        let i = (this.itens).indexOf(item)
+        let vlTt = this.itensVlTt - (this.itensvl[i] * this.itensqt[1])
+        this.itens.splice(i, 1)
+        this.itensqt.splice(i, 1)
+        this.itensvl.splice(i, 1)
+        this.itensVlTt = vlTt
     }
 
 }
@@ -28,7 +32,8 @@ console.log(compra1)
 
 compra1.adicionaItem("Banjo", 2, 450)
 
-console.log(compra1.itens)
+console.log(compra1)
 
 compra1.removeItem("Banjo")
-*/
+
+console.log(compra1)

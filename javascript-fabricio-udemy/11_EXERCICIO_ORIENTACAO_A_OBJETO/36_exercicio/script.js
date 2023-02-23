@@ -1,22 +1,18 @@
-class Banco {
+class Bank {
     constructor(){
-        this.saldo = 0
-    }
+        this.balance = 0} 
 
-    deposito(num){
-        return this.saldo = this.saldo + num
+    withdrawl(num){
+        return this.balance -= num
     }
-    saque(num){
-        return this.saldo = this.saldo - num
+    deposit(num){
+        return this.balance +=  num
     }
 }
 
-let bradesco = new Banco
-
-console.log(bradesco.saldo)
-
-bradesco.deposito(30)
-console.log(bradesco.saldo)
-
-bradesco.saque(10)
-console.log(bradesco.saldo)
+let myAccount = new Bank()
+console.log(myAccount.balance)
+myAccount.withdrawl(1000)
+console.log(myAccount.balance)
+myAccount.deposit(1500)
+console.log(myAccount.balance)
