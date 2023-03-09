@@ -1,6 +1,7 @@
-const dominio = /www.\w+.com|com.br/
+const dominio = /w?w?w?\w+.com|com.br/
 
 console.log(dominio.test("www.sitealeatorio.com"))
 console.log(dominio.test("www.sitealeatorio.com.br"))
 console.log(dominio.test("ww.sitealeatorio.com"))
 console.log(dominio.test("www.sitealeatorio.co"))
+console.log(dominio.test("sitealeatorio.com"))
