@@ -1,7 +1,6 @@
-const frase = "O número 101 está aqui"
-const frase2 = "O número não está aqui"
+const frase = "esta frase tem o número 34".match(/\d[34]/)
+const frase2 = "esta frase não tem números".match(/\d[34]/)
 
-console.log(frase.match(/\d+/))
-console.log(frase.match(/\d+/).index)
-
-console.log(frase2.match(/\d/))
+console.log(frase)
+console.log(frase.index)
+console.log(frase2)// da null
