@@ -1,53 +1,56 @@
-// \d - qualquer dígito de caractere
-// \w - qualquer caractere alfanuméricio 
-// \s - qualquer carcatere de espaço em branco
-// \D - caracteres que não são dígitos
-// \W - caractere não alfanumérico
-// \S - carcatere que não são espaço em branco
-// . - quaquer caractere menos nova linha
+// \d - Qualquer dígito de caractere
+// \w - Um caractere alfanumérico
+// \s - Qualquer caractere de espaço em branco
+// \D - Caracteres que não são dígiots
+// \W - Caracteres que não são alfanuméricos
+// \S - Caracteres que não são espaços em branco
+// . - Qualquer caractere, menos nova linha
 
-let pontoRegex = /./
+const pontoRegex = /./
+console.log(pontoRegex.test("123"))//true
+console.log(pontoRegex.test("abc"))//true
+console.log(pontoRegex.test("!@#"))//true
+console.log(pontoRegex.test("   "))//true
+console.log(pontoRegex.test("\n"))//false
 
-console.log("\nponto:")
-console.log(pontoRegex.test("letras"))
-console.log(pontoRegex.test("123"))
-console.log(pontoRegex.test(" "))
-console.log(pontoRegex.test("!@#$%"))
-console.log(pontoRegex.test("a!1 "))
+const dMin = /\d/ // [0-9]
+console.log(dMin.test("123"))//true
+console.log(dMin.test("abc"))//false
+console.log(dMin.test("!@#"))//false
+console.log(dMin.test("   "))//false
+console.log(dMin.test("\n"))//false
 
-let d = /\d/ // /[0-9]/
+const dMai = /\D/ // [^0-9]
+console.log(dMai.test("123"))//false
+console.log(dMai.test("abc"))//true
+console.log(dMai.test("!@#"))//true
+console.log(dMai.test("   "))//true
+console.log(dMai.test("\n"))//true
 
-console.log("\nd:")
-console.log(d.test("letras"))
-console.log(d.test("1234"))
+const wMin = /\w/
+console.log(wMin.test("123"))//true
+console.log(wMin.test("abc"))//true
+console.log(wMin.test("!@#"))//false
+console.log(wMin.test("   "))//false
+console.log(wMin.test("\n"))//false
 
-let w = /\w/
+const wMai = /\W/
+console.log(wMai.test("123"))//false
+console.log(wMai.test("abc"))//false
+console.log(wMai.test("!@#"))//true
+console.log(wMai.test("   "))//true
+console.log(wMai.test("\n"))//true
 
-console.log("\nw:")
-console.log(w.test("letras"))
-console.log(w.test("123"))
-console.log(w.test("     @"))
+const sMin = /\s/
+console.log(sMin.test("123"))//false
+console.log(sMin.test("abc"))//false
+console.log(sMin.test("!@#"))//false
+console.log(sMin.test("   "))//true
+console.log(sMin.test("\n"))//true
 
-let s = /\s/
-
-console.log("\ns")
-console.log(s.test("com espaço "))
-console.log(s.test("semEspaço"))
-
-let D = /\D/
-
-console.log("\nD")
-console.log(D.test("Sem número"))
-console.log(D.test("1"))
-
-let W = /\W/
-
-console.log("\nW")
-console.log(W.test("Alfanumerico123"))
-console.log(W.test("@   @"))
-
-let S = /\S/
-
-console.log("\nS")
-console.log(S.test("SemEspaço"))
-console.log(S.test(" "))
+const sMai = /\S/
+console.log(sMai.test("123"))//true
+console.log(sMai.test("abc"))//true
+console.log(sMai.test("!@#"))//true
+console.log(sMai.test("   "))//false
+console.log(sMai.test("\n"))//false
