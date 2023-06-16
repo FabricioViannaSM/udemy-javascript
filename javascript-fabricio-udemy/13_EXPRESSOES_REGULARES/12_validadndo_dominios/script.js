@@ -1,4 +1,4 @@
-const dominio = /www\.\w+\.com|com\.br/
+const dominio = /[?www]\.\w+\.com|com\.br/ // [? seleciona um conjunto de carateres opcionais]
 
 console.log(dominio.test("www.sitealeatorio.com"))
 console.log(dominio.test("www.sitealeatorio.com.br"))
