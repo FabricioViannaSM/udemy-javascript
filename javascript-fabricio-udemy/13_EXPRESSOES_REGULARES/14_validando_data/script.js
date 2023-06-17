@@ -1,6 +1,5 @@
-const data = /\d\d\/?\d\d\/?\d?\d?\d\d/
+const data = /[0-9]{2}[/][0-9]{2}[/]([0-9]{4}|[0-9]{2})/
 
-console.log(data.test("01/02/2003"))
-console.log(data.test("01092022"))
-console.log(data.test("010708"))
-console.log(data.test("01/02/03"))
+console.log(data.test("12/09/2004"))
+console.log(data.test("01/09/04"))
+console.log(data.test("1/2/3"))
