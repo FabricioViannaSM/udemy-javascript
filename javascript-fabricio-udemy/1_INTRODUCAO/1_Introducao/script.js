@@ -1,1 +1,0 @@
-console.log("Olá, mundo! só que linkado")
