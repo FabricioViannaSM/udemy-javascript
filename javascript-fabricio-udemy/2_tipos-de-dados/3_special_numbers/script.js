@@ -1,0 +1,6 @@
+console.log(0xff ** 0xff)
+console.log(2e43242 * -7890)
+console.log(0/0)
+console.log(Infinity/Infinity)
+console.log(Math.sqrt(-73))
+console.log("true" *  false)
