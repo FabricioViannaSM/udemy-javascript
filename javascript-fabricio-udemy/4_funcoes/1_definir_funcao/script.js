@@ -8,3 +8,12 @@ let raizQuadrada = function (num){
 }
 
 console.log(raizQuadrada(121))
+
+
+function imprimirNumero(num){
+    console.log(`o número é ${num}`)
+}
+
+const numeroAleatorio = function(){
+    console.log(Math.random())
+}

@@ -5,8 +5,10 @@ let mix = [1, "Fabrício", true]
 
 numero2 = number[1]
 joão = string[3]
+boolFalse = boolean[1]
 ultimoNumero = number[number.length - 1]
 
 console.log(numero2)
 console.log(joão)
+console.log(boolFalse)
 console.log(ultimoNumero)
