@@ -19,3 +19,21 @@ carro.bodykit = true
 console.log(carro.bodykit)
 
 console.log(carro)
+
+let pessoa = {
+    cpf: 12345678900,
+    estadoCivil: "solteira",
+    nomeSujo: true
+}
+
+console.log(pessoa.nomeSujo)
+
+delete pessoa.nomeSujo
+
+console.log(pessoa.nomeSujo)
+
+pessoa.credito = 1000.00 
+
+console.log(pessoa.credito)
+
+console.log(pessoa)

@@ -10,3 +10,20 @@ let carro = {
 console.log(carro.modelo)
 console.log(carro.ano)
 carro.darPartida()
+
+let papagaio = {
+    asas: 2,
+    patas: 2,
+    penas: true,
+    repetirFrase: function(frase){
+        console.log(`LORO, ${frase}, LORO`)
+    }
+}
+
+console.log(papagaio.asas)
+console.log(papagaio.patas)
+console.log(papagaio.penas)
+papagaio.repetirFrase("OOOOO POTÊNCIA")
+
+// [] = array
+// {} = objeto
