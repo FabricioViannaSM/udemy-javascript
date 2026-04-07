@@ -1,6 +1,9 @@
 let objeto1 = {
-    proptiedade1: true,
-    propriedade2: "Sim"
+    chave1: true,
+    chave2: "Sim",
+    chave3: 0
 }
 
 console.log(Object.keys(objeto1))
+
+// No método keys é recebido um array como resposta 

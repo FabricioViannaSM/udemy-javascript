@@ -18,3 +18,21 @@ let objeto3 = {
 }
 
 console.log(objeto1 == objeto3)
+
+let fulano = {
+    nome: false
+}
+
+let ciclano = fulano
+
+let eIgual = fulano == ciclano
+ 
+console.log(`Fulano é igual a ciclano? ${eIgual}` )
+
+let beltrano = {
+    nome: false
+}
+
+eIgual = fulano == beltrano
+
+console.log(`Fulano é igual a beltrano? ${eIgual}`)

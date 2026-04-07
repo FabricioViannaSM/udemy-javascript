@@ -2,9 +2,9 @@ let nomes = ["Luis", "Carlos", "Percy"]
 
 console.log(nomes)
 
-nomes.pop()
+let elementoRemovido = nomes.pop()
 
-console.log(nomes)
+console.log("Nome " + elementoRemovido + " removido.")
 
 nomes.push("Chagas")
 

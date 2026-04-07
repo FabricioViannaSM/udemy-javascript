@@ -2,9 +2,9 @@ let nomes = ["Luis", "Carlos", "Percy"]
 
 console.log(nomes)
 
-nomes.shift()
+elementoRemovido = nomes.shift()
 
-console.log(nomes)
+console.log("Nome " + elementoRemovido + " removido")
 
 nomes.unshift("Roberto")
 
