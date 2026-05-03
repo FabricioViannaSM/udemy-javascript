@@ -1,0 +1,1 @@
+console.log("É o pente, ".repeat(10))
